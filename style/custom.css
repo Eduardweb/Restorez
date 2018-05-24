@@ -67,8 +67,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h1{}
-h2{}
-h3{
+h2{
   font-family: 'Frutiger';
   font-size: 52px;
   font-weight: 300;
@@ -79,6 +78,7 @@ h3{
   text-align: center;
   color: #ffffff;
 }
+h3{}
 h4{}
 h5{}
 h6{}
@@ -194,6 +194,37 @@ header .nav-item.dropdown.show a.nav-link{
 /* ============= End Header============= */
 
 /* ============= Home ================== */
+.benefits{
+  padding: 52px 0 90px;
+  background-image: linear-gradient(to bottom, #275c93, #003e7e 48%, #275c93);
+}
+.benefits-wrap{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 56px;
+}
+.benefits-item{
+  width: 360px;
+}
+.benefits-item-img{
+  position: relative;
+}
+.benefits-item p{
+  font-family: 'Frutiger-Roman';
+  font-size: 20px;
+  margin-top: 44px;
+}
+.benefits-item-title{
+  position: absolute;
+  right: 0;
+  width: 60%;
+  background-color: #eee;
+  bottom: 80px;
+  padding: 0px 3px;
+}
+.benefits-item-title p{
+  margin: 0;
+}
 
 /* =========== End Home =============== */
 
