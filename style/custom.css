@@ -169,11 +169,50 @@ textarea:-moz-placeholder { /* Firefox 18- */
 /* ============= Header ========== */
 
 header{
-  padding: 50px 80px;
-  z-index: 2;
+
+}
+.header-top{
+  height: 68px;
+  background-image: linear-gradient(to top, #275c93, #003e7e);
+}
+.header-top p{
+  font-family: 'Frutiger-Roman';
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #ffffff;
+  padding: 20px 0px;
+}
+.header-top .phone{
+  margin-left: 30px;
+}
+.header-top .account{
   position: relative;
-  background-color: #fff;
-  height: 140px;
+}
+.header-top .icon-header{
+  position: relative;
+  top: -2px;
+  margin-left: 8px;
+}
+.header-top .icon-header img{
+  height: 21px;
+  width: auto;
+}
+.header-top .account-card{
+  margin-left: 70px;
+}
+.header-bottom{
+  padding: 32px 0 23px;
+  height: 125px;
+}
+.logo{
+  width: 267px;
+  height: auto;
+  padding: 0;
+  margin: 0;
 }
 .navbar, .navbar-brand{
   padding: 0;
@@ -181,33 +220,23 @@ header{
 .navbar-brand{
   margin-right: 0;
 }  
-.navbar-toggleable-md .navbar-nav .nav-link {
+.nav-item{
+  margin-left: 75px;
+  font-family: 'Frutiger';
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+}
+.navbar-nav{
+  margin-top: 15px;
+}
 
-}
-.logo{
-  width: 185px;
-  height: 40px;
-  padding: 0;
-  margin: 0;
-}
-.dropdown-menu {
-  padding: 30px;
-  background-color: #ffffff;
-  box-shadow: 0 11px 20px 0 rgba(0, 0, 0, 0.1);
-  border: 0;
-}
-.dropdown-item {
-  padding: 0;
-}
-.dropdown-item:last-child{
-  margin: 0;
-}
-header .dropdown-item:hover {
-  
-}
-header .nav-item.dropdown.show a.nav-link{
- 
-}
+
+
+
 
 /* ============= End Header============= */
 
@@ -550,10 +579,10 @@ footer .newsletter{
 }
 @media screen and (min-width: 1399px){
   .container{
-    width: 1240px;
+    width: 1300px;
   }
 }
-@media screen and (min-width: 1260px){
+@media screen and (max-width: 1360px){
   .container{
     width: 1200px;
   }
