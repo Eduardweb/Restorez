@@ -9,15 +9,17 @@
 /* == 404 page and Modal== */
 /* == Media== */
 
-/* @font-face {
+@font-face {
   font-family: 'Frutiger-Roman';
-  src: url('./fonts/Apercu_Pro/apercu-mono-pro.otf') format("opentype");
-}
+  src: url('./fonts/Frutiger_Roman.ttf') format("truetype");
+} 
 @font-face {
   font-family: 'Frutiger';
-  src: url('./fonts/Apercu_Pro/apercu-mono-pro.otf') format("opentype");
-} */
-
+  src: url('./fonts/Frutiger_Normal.ttf') format("truetype"),
+       url('./fonts/Frutiger_Normal.woff') format('woff');
+  font-weight: normal;
+	font-style: normal;
+} 
 
 /* ============ Global ========== */
 body{
@@ -61,12 +63,17 @@ button::-moz-focus-inner {
 .cur-p{
   cursor: pointer;
 }
-
+.over-hidden{
+  overflow: hidden;
+}
 h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
 
-h1{}
+h1{
+  font-family: 'Frutiger-Roman';
+  font-size: 52px;
+}
 h2{
   font-family: 'Frutiger';
   font-size: 52px;
@@ -78,7 +85,16 @@ h2{
   text-align: center;
   color: #ffffff;
 }
-h3{}
+h3{
+  font-family: 'Frutiger';
+  font-size: 32px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: center;
+}
 h4{}
 h5{}
 h6{}
@@ -86,9 +102,11 @@ h6{}
 .color-white{
   color: #fff;
 }
-
 .color-black{
   color: #000;
+}
+.color-grey{
+  color: #4a4a4a;
 }
 
 section{
@@ -194,17 +212,60 @@ header .nav-item.dropdown.show a.nav-link{
 /* ============= End Header============= */
 
 /* ============= Home ================== */
+.two-box {
+  padding: 62px 0 56px;
+}
+.two-box .circles{
+  margin: 0 auto 42px;
+  position: relative;
+}
+.two-box .circle {
+  margin: 0 auto 20px;
+  position: relative;
+}
+.two-box .circles span{
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  margin: 3px;
+}
+.two-box .circle span{
+  display: inline-block;
+  width: 112px;
+  height: 112px;
+}
+.two-box .box-wrap{
+  background-color: #f4f4f4;
+  border: solid 2px #f4f4f4;
+  padding: 41px 72px 35px;
+}
+.two-box .two-box-btn{
+  font-family: 'Frutiger';
+  font-size: 16px;
+  font-weight: bold;
+}
+.two-box-text{
+  margin: 20px 0 42px;
+  font-family: 'Frutiger-Roman';
+  font-size: 16px;
+  line-height: 1.56;
+}
+.two-box .two-box-btn i{
+  margin-left: 12px;
+  font-size: 16px;
+}
+.benefits .container{
+  padding: 0;
+}
 .benefits{
   padding: 52px 0 90px;
   background-image: linear-gradient(to bottom, #275c93, #003e7e 48%, #275c93);
 }
 .benefits-wrap{
-  display: flex;
-  justify-content: space-between;
   margin-top: 56px;
 }
 .benefits-item{
-  width: 360px;
+  margin: 0 25px;
 }
 .benefits-item-img{
   position: relative;
@@ -216,16 +277,135 @@ header .nav-item.dropdown.show a.nav-link{
 }
 .benefits-item-title{
   position: absolute;
-  right: 0;
+  right: -1px;
   width: 60%;
-  background-color: #eee;
-  bottom: 80px;
-  padding: 0px 3px;
+  background-color: rgba(86, 78, 78, 0.56);
+  bottom: 120px;
+  padding: 3px 8px;
 }
 .benefits-item-title p{
   margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
 }
-
+.benefits-item-title p:last-child{
+  font-size: 13px;
+}
+.products{
+  padding: 86px 0 81px;
+  position: relative;
+  background-color: #fff;
+}
+.product-slider{
+  margin-top: 76px;
+}
+.product-slide-wrap{
+  max-width: 256px;
+  border: 2px solid #f4f4f4;
+  margin: 0 auto;
+}
+.product-slide-img{
+  padding: 10px 15px 0;
+  background-color: #fff;
+}
+.product-slide-content{
+  padding: 25px 10px 19px;
+  background-color: #f4f4f4;
+}
+.products .product-name{
+  font-family: 'Frutiger';
+  font-size: 24px;
+  font-weight: bold;
+}
+.products .product-price{
+  font-family: 'Frutiger-Roman';
+  font-size: 20px;
+  font-weight: normal;
+}
+.products .products-bg{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 50px;
+}
+.slick-prev, .slick-next {
+  width: 60px;
+  height: 60px;
+  border: solid 2px #d8d8d8;
+  z-index: 2;
+  top: 40%;
+  border-radius: 50%;
+}
+.slick-prev:before, .slick-next:before{
+  color: #275c93;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 30px;
+  opacity: 1;
+}
+.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before{
+  opacity: .6;
+}
+.slick-prev:before{
+  content: "\f104";
+}
+.slick-next:before{
+  content: "\f105";
+}
+.testimonials{
+  padding: 31px 0 72px;
+}
+.testimonials-slider{
+  margin-top: 40px;
+  width: 150%;
+  position: relative;
+  margin-left: -25%;
+}
+.testimonials-slide{
+  padding: 0 35px;
+  opacity: 0.5;
+}
+.testimonials-slide.slick-current + .slick-active{
+  opacity: 1;
+}
+.testimonials-slide-wrap{
+  margin: 0 auto;
+  border: solid 2px #f4f4f4;
+}
+.testimonials-slide-top{
+  position: relative;
+  padding: 18px 21px;
+  background-color: #f4f4f4;
+}
+.testimonials-slide-bottom{
+  padding: 42px 24px 24px 29px;
+  min-height: 198px;
+}
+.testimonials-slide-bottom p{
+  font-family: 'Frutiger';
+  font-size: 20px;
+  font-weight: 300;
+}
+.testimonials-slide-top .triangle{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 21px 18.5px 0 18.5px;
+  border-color: #f4f4f4 transparent transparent transparent;
+  left: 50%;
+  bottom: -20px;
+}
+.testimonials-slide-top .star{
+  font-family: 'Frutiger';
+  font-size: 24px;
+}
+.testimonials-slide-top p{
+  font-family: 'Frutiger';
+  font-size: 20px;
+  font-weight: bold;
+}
 /* =========== End Home =============== */
 
 /* =========== ABOUT ================== */
@@ -237,9 +417,13 @@ header .nav-item.dropdown.show a.nav-link{
 /* ============= END CONTACT =========== */
 
 /* ============= Footer =============== */
+footer{
+  background-image: url('../img/footer_background_2x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .footer-top{
   padding: 79px 0 89px;
-  background-color: #275c93;
 }
 .footer-top .center-block{
   width: 908px;
@@ -309,12 +493,12 @@ footer .newsletter{
   line-height: 1.19;
   color: #fff;
   margin-right: 51px;
+  margin-top: 5px;
 }
 .footer-bottom{
   padding: 56px 0 103px;
   font-family: 'Frutiger-Roman';
   color: #fff;
-  background-color: #4a4a4a;
 }
 .footer-bottom p {
   font-size: 16px;
@@ -364,8 +548,15 @@ footer .newsletter{
 @media screen and (max-width: 1499px){
   
 }
-@media screen and (max-width: 1399px){
-  
+@media screen and (min-width: 1399px){
+  .container{
+    width: 1240px;
+  }
+}
+@media screen and (min-width: 1260px){
+  .container{
+    width: 1200px;
+  }
 }
 @media screen and (max-width: 1199px){
   
