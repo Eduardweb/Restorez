@@ -233,11 +233,79 @@ header{
 .navbar-nav{
   margin-top: 15px;
 }
+.home-slide-img{
+  position: relative;
+  min-height: 725px;
+  width: auto;
+  overflow: hidden;
+}
+.home-slide-bg{
+  position: absolute;
+}
+.top-home .slide-content{
+  margin-top: 152px;
+  max-width: 620px;
+}
 
-
-
-
-
+.top-home .slide-content h1{
+  font-family: 'Frutiger';
+  font-size: 52px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 25px;
+}
+.top-home .slide-content p{
+  font-family: 'Frutiger-Roman';
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+}
+.top-home .slick-prev, 
+.top-home  .slick-next{
+  top: 300px;
+  border: 0;
+}
+.top-home .slick-prev {
+  left: 0;
+}
+.top-home .slick-next{
+  right: 0;
+}
+.top-home .slick-prev:before,
+.top-home .slick-next:before{
+  font-size: 45px;
+  color: #d8d8d8;
+}
+.top-home .btn-shop{
+  width: 248px;
+  height: 54px;
+  border-radius: 5px;
+  background-color: #53cdf5;
+  margin-top: 44px;
+  font-family: 'Frutiger-Roman';
+  font-size: 22px;
+  color: #fff;
+}
+.top-home .slick-dots {
+  bottom: 62px;
+}
+.top-home .slick-dots li button:before{
+  font-size: 12px;
+  color: #d8d8d8;
+}
+.slick-dots li.slick-active button:before{
+  opacity: 1;
+  font-size: 15px;
+}
 /* ============= End Header============= */
 
 /* ============= Home ================== */
