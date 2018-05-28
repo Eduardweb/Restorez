@@ -66,6 +66,9 @@ button::-moz-focus-inner {
 .over-hidden{
   overflow: hidden;
 }
+.mobile-show{
+  display: none;
+}
 h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
@@ -122,7 +125,16 @@ h5{
   text-align: left;
   color: #4a4a4a;
 }
-h6{}
+h6{
+  font-family: 'Frutiger';
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: left;
+}
 
 .color-white{
   color: #fff;
@@ -132,6 +144,9 @@ h6{}
 }
 .color-grey{
   color: #4a4a4a;
+}
+.color-blue{
+  color: #003e7e;
 }
 
 section{
@@ -178,10 +193,25 @@ textarea:-moz-placeholder { /* Firefox 18- */
   cursor: pointer;
   position: relative;
 }
-.btn.btn-default{
-
+.btn.btn-product{
+  font-family: 'Frutiger';
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #5d85ae;
+  height: 42px;
+  width: 300px;
 }
-.btn.btn-default:hover{
+.btn.btn-product + .btn.btn-product{
+  margin-top: 20px;
+}
+.btn.btn-product:hover{
 
 }
 
@@ -608,7 +638,47 @@ header{
 /* =============END Why it works ==========*/
 
 /* ============= Products ==============*/
-
+.product-details{
+  padding: 63px 0 35px;
+}
+.product-details table{
+  max-width: 380px;
+  margin-top: 30px;
+  border: 0;
+  font-family: 'Frutiger-Roman';
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+}
+.product-details .table td, 
+.product-details .table th{
+  border: 0;
+  padding: 0;
+}
+.product-details h3{
+  margin: 10px 0 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.product-details h6{
+  margin: 50px 0 24px;
+  text-transform: uppercase;
+}
+.product-details p{
+  font-family: 'Frutiger-Roman';
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+}
 /* =============END Products ==============*/
 
 /* ============= Footer =============== */
@@ -797,6 +867,9 @@ footer .newsletter{
   .two-box-content h4 {
     margin: 0 0 20px;
   }
+  .btn.btn-product{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1149px){
   .home-slide-img {
@@ -893,6 +966,55 @@ footer .newsletter{
   h3{
     font-size: 22px;
     line-height: 1.73;
+  }
+  .btn-product .mobile-hide{
+    display: none;
+  }
+  .btn-product .mobile-show{
+    display: block;
+  }
+  .btn.btn-product{
+    width: auto;
+    background-color: inherit;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 2px;
+    color: #003e7e;
+    border-bottom: solid 2px inherit;
+  }
+  .btn.btn-product.active{
+    border-bottom: solid 2px #c9d6e4;
+    border-radius: 0;
+  }
+  .btn.btn-product + .btn.btn-product{
+    margin: 0;
+  }
+  .product-details h3 {
+    background-color: #275c93;
+    color: #fff;
+    padding: 12px;
+    margin: 27px 0 21px;
+    text-align: center;
+  }
+  .product-details h6{
+    font-size: 16px;
+    margin: 43px 0 13px;
+    text-align: center;
+  }
+  .product-details p,
+  .product-details table{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.79;
+  }
+  .product-details table{
+    margin: 19px auto 0;
+  }
+  .details-btn-wrap{
+    display: flex;
+    justify-content: space-around;
+    margin:0;
+    border-bottom: solid 1px #c9d6e4;
   }
   .breadcrumbs{
     display: none;
