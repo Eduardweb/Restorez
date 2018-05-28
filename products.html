@@ -64,13 +64,76 @@
 
   <section class="mx-auto over-hidden">
     <div class="product-section">
+      <div class="product-section-wave">
+
+        <!-- substitute for product -->
+        <img src="img/wave blue-large scale@4x.png" alt="">
+        <!-- <img src="img/wave orange-large scale@4x.png" alt="">
+        <img src="img/wave purple-large scale@4x.png" alt=""> -->
+
+      </div>
       <div class="container">
         <div class="row">
-          <div class="col-sm-4">
-          </div>
-          <div class="col-sm-8">
+          <div class="col-lg-12">
+            <div class="breadcrumbs color-grey">
+              <span class="cur-p">Home</span>  /  
+              <span class="cur-p">Products</span>  
+            </div>
+          </div>  
+          <div class="col-sm-6 color-grey">
+            <div class="product-section-slider">
+              <div class="slider-for">
+                <div>
+                  <img src="./img/bottle_item@2x.png" alt="">
+                </div>
+                <div>
+                  <img src="./img/bottle_item@2x.png" alt="">
+                </div>
+                <div>
+                  <img src="./img/bottle_item@2x.png" alt="">
+                </div>
+                <div>
+                  <img src="./img/bottle_item@2x.png" alt="">
+                </div>
+              </div>
+            
+              <div class="slider-nav">
+                <div>
+                  <img src="./img/bottle_item@2x.png" alt="">
+                </div>
+                <div>
+                  <img src="./img/bottle_item@2x.png" alt="">
+                </div>
+                <div>
+                  <img src="./img/bottle_item@2x.png" alt="">
+                </div>
+                <div>
+                  <img src="./img/bottle_item@2x.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>  
+          <div class="col-sm-6">
+            <h1>RestoreZ <sup>®</sup>
+
+              <!-- substitute for product -->
+              <span class="product-blue">fall asleep</span>
+              <!-- <span class="product-orange">power nap</span> -->
+              <!-- <span class="product-purple">stay asleep</span>  -->
+              <!-- <span class="product-green">restful sleep</span> -->
+
+            </h1>
+            <p class="product-section-price color-grey">Price: $39.99</p>
+            <p class="promotional color-grey">Promotional Message section for quantity offer, free shipping or product announcement.</p>
+            <p class="product-description color-grey">RestoreZ Fall Asleep restores the body’s ability to naturally fall asleep faster, cope with stress and enhance the quality of sleep so that you feel more physically and mentally energized in the morning by supporting and synchronizing the body’s circadian rhythms.</p>
+            <div class="product-section-btn">
+              <button class="btn btn-qty">Qty</button>
+              <button class="btn btn-add">Add to Cart</button>
+            </div>
           </div>
         </div>
+      </div>
+
       </div>
     </div>
     <div class="product-details">
@@ -143,23 +206,21 @@
 </script>
     <script type="text/javascript"> // Slick slider http://kenwheeler.github.io/slick/
       $(document).ready(function(){
-        $('.testimonials-slider').slick({
-          dots: false,
-          infinite: true,
-          slidesToShow: 3,
+        $('.slider-for').slick({
+          slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
-          responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                arrows: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true
-              }
-            },
-          ]
+          fade: true,
+          asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          asNavFor: '.slider-for',
+          dots: false,
+          centerMode: true,
+          focusOnSelect: true,
+          infinite: true
         });
       });
     </script>

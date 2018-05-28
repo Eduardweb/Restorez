@@ -148,7 +148,23 @@ h6{
 .color-blue{
   color: #003e7e;
 }
+.product-blue{
+  color: #00aeef;
+}
+.product-purple{
+  color: #92278f;
+}
+.product-orange{
+  color: #f7941d;
+}
+.product-green{
+  color: #39b54a
 
+
+}
+.bg-white{
+  background-color: #fff;
+}
 section{
   width: 100%;
   position: relative;
@@ -192,9 +208,9 @@ textarea:-moz-placeholder { /* Firefox 18- */
 .btn{
   cursor: pointer;
   position: relative;
+  font-family: 'Frutiger';
 }
 .btn.btn-product{
-  font-family: 'Frutiger';
   font-size: 16px;
   font-weight: bold;
   font-style: normal;
@@ -207,6 +223,28 @@ textarea:-moz-placeholder { /* Firefox 18- */
   background-color: #5d85ae;
   height: 42px;
   width: 300px;
+}
+.btn-qty,
+.btn-add{
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  height: 60px;
+  padding: 0 30px;
+}
+.btn-qty{
+  font-family: 'Frutiger-Roman';
+  color: #4a4a4a;
+  background-color: #c9d6e4;
+  margin-right: 18px;
+}
+.btn-add{
+  color: #fff;
+  background-color: #5d85ae;
 }
 .btn.btn-product + .btn.btn-product{
   margin-top: 20px;
@@ -638,6 +676,87 @@ header{
 /* =============END Why it works ==========*/
 
 /* ============= Products ==============*/
+.product-section{
+  background: rgba(216,216,216,1);
+  background: -moz-linear-gradient(top, rgba(216,216,216,1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 68%, rgba(216,216,216,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(216,216,216,1)), color-stop(35%, rgba(255,255,255,1)), color-stop(68%, rgba(255,255,255,1)), color-stop(100%, rgba(216,216,216,1)));
+  background: -webkit-linear-gradient(top, rgba(216,216,216,1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 68%, rgba(216,216,216,1) 100%);
+  background: -o-linear-gradient(top, rgba(216,216,216,1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 68%, rgba(216,216,216,1) 100%);
+  background: -ms-linear-gradient(top, rgba(216,216,216,1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 68%, rgba(216,216,216,1) 100%);
+  background: linear-gradient(to bottom, rgba(216,216,216,1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 68%, rgba(216,216,216,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d8d8', endColorstr='#d8d8d8', GradientType=0 );
+  position: relative;
+  }
+.product-section .breadcrumbs{
+  padding: 60px 0;
+}
+.product-section-slider{
+  max-width: 555px;
+}
+.product-section .product-section-wave{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 180px;
+}
+.product-section h1{
+  font-weight: 300;
+  color: #4a4a4a;
+  line-height: 1.12;
+  letter-spacing: -0.5px;
+  text-align: left;
+  margin-bottom: 22px;
+}
+.product-section h1 span{
+  font-weight: 300;
+  line-height: 1.12;
+  letter-spacing: -0.5px;
+  font-weight: bold;
+}
+.product-section h1 sup{
+  font-size: 14px;
+  font-weight: 300;
+  top: -27px;
+  left: -8px;
+}
+.product-section-price{
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.19;
+  letter-spacing: normal;
+}
+.product-section .promotional{
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.19;
+  margin: 30px 0 ;
+}
+.product-section .product-description{
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.56;
+}
+.product-section .product-section-btn{
+  margin-top: 65px;
+}
+.slider-for{
+  padding: 30px 120px;
+  border-radius: 4px;
+  border: solid 3px #f4f4f4;
+  background-color: #ffffff;
+}
+.slider-nav{
+  margin: 20px 0 17px;
+}
+.product-section .slider-nav .slick-slide{
+  padding: 15px 15px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 3px #f4f4f4;
+  margin: 0 10px;
+}
 .product-details{
   padding: 63px 0 35px;
 }
@@ -1347,3 +1466,16 @@ footer .newsletter{
   }
 } 
 
+
+
+
+.product-section{
+background: rgba(216,216,216,1);
+background: -moz-linear-gradient(top, rgba(216,216,216,1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 68%, rgba(216,216,216,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(216,216,216,1)), color-stop(35%, rgba(255,255,255,1)), color-stop(68%, rgba(255,255,255,1)), color-stop(100%, rgba(216,216,216,1)));
+background: -webkit-linear-gradient(top, rgba(216,216,216,1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 68%, rgba(216,216,216,1) 100%);
+background: -o-linear-gradient(top, rgba(216,216,216,1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 68%, rgba(216,216,216,1) 100%);
+background: -ms-linear-gradient(top, rgba(216,216,216,1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 68%, rgba(216,216,216,1) 100%);
+background: linear-gradient(to bottom, rgba(216,216,216,1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 68%, rgba(216,216,216,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d8d8', endColorstr='#d8d8d8', GradientType=0 );
+}
