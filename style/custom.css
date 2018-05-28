@@ -2,7 +2,8 @@
 /* == BTN ==*/
 /* == Header ==*/
 /* == Home ==*/
-/* == ABOUT ==*/
+/* == Why it works ==*/
+/* == Products ==*/
 /* == Footer ==*/
 /* == Modal ==*/
 /* == 404 page and Modal== */
@@ -68,11 +69,16 @@ button::-moz-focus-inner {
 h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
-
+.breadcrumbs{
+  font-family: 'Frutiger-Roman';
+  font-size: 15px;
+  color: #4a4a4a;
+}
 h1{
   font-family: 'Frutiger-Roman';
   font-size: 52px;
 }
+
 h2{
   font-family: 'Frutiger';
   font-size: 52px;
@@ -94,8 +100,28 @@ h3{
   letter-spacing: normal;
   text-align: center;
 }
-h4{}
-h5{}
+h4{
+  font-family: 'Frutiger';
+  font-size: 28px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4a4a4a;
+}
+h5{
+  font-family: 'Frutiger';
+  font-size: 52px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.12;
+  letter-spacing: -2px;
+  text-align: left;
+  color: #4a4a4a;
+}
 h6{}
 
 .color-white{
@@ -517,13 +543,61 @@ header{
 }
 /* =========== End Home =============== */
 
-/* =========== ABOUT ================== */
+/* ============= Why it works ==========*/
+.why-it-wrap{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.why-it-works-top{
+  padding: 59px 0 100px;
+  background-color: #D4E7F1;
+}
+.why-it-works-top h1{
+  font-family: 'Frutiger';
+  line-height: 1.12;
+  letter-spacing: -2px;
+  margin: 111px 0 18px;
+}
+.why-it-works-top p{
+  font-family: 'Frutiger-Roman';
+  font-size: 20px;
+  line-height: 1.5;
+}
+.why-it-works-content{
+  padding: 183px 0 0px;
+}
+.two-box-content h4{
+  margin: 50px 0 20px;
+}
+.two-box-content{
+  margin: 0 0 107px;
+}  
+.two-box-content p{
+  font-family: 'Frutiger-Roman';
+  font-size: 20px;
+  line-height: 1.5;
+}
+.two-box-content p + p{
+  margin-top: 30px;
+}
+.why-it-works-content-full {
+  position: relative;
+  overflow: hidden;
+}
+.why-it-works-content-full .content-full-img{
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.why-it-works-content-full h5{
+  max-width: 822px;
+  padding: 316px 0 68px;
+}
+/* =============END Why it works ==========*/
 
-/* =========== End ABOUT ============== */
+/* ============= Products ==============*/
 
-/* ============= CONTACT =============== */
-
-/* ============= END CONTACT =========== */
+/* =============END Products ==============*/
 
 /* ============= Footer =============== */
 footer{
