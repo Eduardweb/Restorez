@@ -996,6 +996,15 @@ footer .newsletter{
   }
 }
 @media screen and (max-width: 991px){
+  .slider-for {
+    padding: 10px 20px;
+  }
+  .product-section .product-section-btn{
+    margin: 30px 0;
+  }
+  .product-section .slider-nav .slick-slide{
+    padding: 0;
+  }
   .nav-link {
     padding: 5px 0;
     margin: 5px 0;
@@ -1108,6 +1117,12 @@ footer .newsletter{
   .btn.btn-product + .btn.btn-product{
     margin: 0;
   }
+  .btn-qty {
+    display: none;
+  }
+  .btn-add{
+    width: 100%;
+  }
   .product-details h3 {
     background-color: #275c93;
     color: #fff;
@@ -1119,6 +1134,55 @@ footer .newsletter{
     font-size: 16px;
     margin: 43px 0 13px;
     text-align: center;
+  }
+  .product-section .product-section-btn{
+    margin: 20px 0;
+  }
+  .product-section {
+    background: #fff!important;
+  }
+  .product-section h1{
+    font-size: 28px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .product-section h1 sup {
+    top: -14px;
+    left: -5px;
+    font-size: 9px;
+  }  
+  .product-section .product-description{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.79;
+  }
+  .product-section .promotional{
+    text-align: center;
+    max-width: 245px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    margin: 24px auto;
+    display: block;
+  }
+  .product-section-price{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .product-section .slider-nav{
+    display: none;
+  }
+  .product-section .slick-slide img{
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .product-section .slick-prev, 
+  .product-section .slick-next{
+    border: 0px;
   }
   .product-details p,
   .product-details table{
@@ -1442,6 +1506,12 @@ footer .newsletter{
   .products .product-price{
     display: none;
   }
+  .product-section h1{
+    margin-top: 33px;
+  }
+  .product-section .product-section-wave{
+    bottom: 300px;
+  }
   .testimonials-slide-top{
     padding: 10px;
   }
@@ -1464,18 +1534,7 @@ footer .newsletter{
   .benefits-wrap .slick-dots{
     bottom: 65px;
   }
+  .product-section .product-section-wave{
+    bottom: 380px;
+  }
 } 
-
-
-
-
-.product-section{
-background: rgba(216,216,216,1);
-background: -moz-linear-gradient(top, rgba(216,216,216,1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 68%, rgba(216,216,216,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(216,216,216,1)), color-stop(35%, rgba(255,255,255,1)), color-stop(68%, rgba(255,255,255,1)), color-stop(100%, rgba(216,216,216,1)));
-background: -webkit-linear-gradient(top, rgba(216,216,216,1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 68%, rgba(216,216,216,1) 100%);
-background: -o-linear-gradient(top, rgba(216,216,216,1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 68%, rgba(216,216,216,1) 100%);
-background: -ms-linear-gradient(top, rgba(216,216,216,1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 68%, rgba(216,216,216,1) 100%);
-background: linear-gradient(to bottom, rgba(216,216,216,1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 68%, rgba(216,216,216,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d8d8', endColorstr='#d8d8d8', GradientType=0 );
-}
