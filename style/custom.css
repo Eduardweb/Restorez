@@ -548,9 +548,17 @@ header{
   max-width: 1140px;
   margin: 0 auto;
 }
+.why-it-works .content-full-img{
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.why-it-works .content-full-img img{
+  min-height: 420px;
+  width: auto;
+}    
 .why-it-works-top{
   padding: 59px 0 100px;
-  background-color: #D4E7F1;
 }
 .why-it-works-top h1{
   font-family: 'Frutiger';
@@ -588,6 +596,10 @@ header{
   position: absolute;
   width: 100%;
   height: auto;
+}
+.why-it-works-content-full .content-full-img img{
+  min-height: 500px;
+  width: auto;
 }
 .why-it-works-content-full h5{
   max-width: 822px;
@@ -782,6 +794,9 @@ footer .newsletter{
   .home-slide-img{
     min-height: 600px;
   }
+  .two-box-content h4 {
+    margin: 0 0 20px;
+  }
 }
 @media screen and (max-width: 1149px){
   .home-slide-img {
@@ -878,6 +893,95 @@ footer .newsletter{
   h3{
     font-size: 22px;
     line-height: 1.73;
+  }
+  .breadcrumbs{
+    display: none;
+  }
+  .why-it-works-top {
+    background-image: linear-gradient(to bottom, #d8d8d8, #ffffff 49%, #ffffff 86%, #f4f4f4);
+    padding: 59px 0 25px;
+  }
+  .why-it-works .content-full-img img {
+    min-height: 300px;
+    max-height: 300px;
+  }
+  .why-it-works-top h1 {
+    margin: 200px 0 26px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff!important;
+  }
+  .why-it-works-top p{
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.79;
+    letter-spacing: normal;
+    margin: 0 0 5px;
+  }
+  .why-it-works-content {
+    padding: 21px 0 0px;
+  }
+  .two-box-content {
+    margin: 0 0 20px;
+}
+  .two-box-content h4{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+  }
+  .two-box-content p{
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #9b9b9b!important;
+  }
+  .two-box-content p + p {
+    margin-top: 10px;
+  }
+  .lear-more{
+    display: block;
+    margin: 10px 0 18px;
+  }
+  .lear-more span{
+    font-family: 'Frutiger';
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #53cdf5;
+  }
+  .lear-more i{
+    margin-left: 5px;
+  }
+  .why-it-works-content-full .content-full-img {
+    position: relative;
+  }  
+  .why-it-works-content-full .content-full-img img{
+    width: 100%;
+    min-height: auto;
+    height: auto;
+  }
+  .why-it-works-content-full {
+    background-color: #f4f4f4;
+  }
+  .why-it-works-content-full h5{
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    padding: 20px 0;
   }
   .home-slide-img {
     min-height: 480px;
