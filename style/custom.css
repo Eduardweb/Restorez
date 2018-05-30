@@ -620,10 +620,12 @@ header{
   position: absolute;
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 .why-it-works .content-full-img img{
   min-height: 420px;
-  width: auto;
+  width: 100%;
+  height: auto;
 }    
 .why-it-works-top{
   padding: 59px 0 100px;
@@ -667,7 +669,8 @@ header{
 }
 .why-it-works-content-full .content-full-img img{
   min-height: 500px;
-  width: auto;
+  width: 100%;
+  height: auto;
 }
 .why-it-works-content-full h5{
   max-width: 822px;
@@ -996,6 +999,20 @@ footer .newsletter{
   }
 }
 @media screen and (max-width: 991px){
+  .why-it-works .content-full-img img {
+    min-height: 460px;
+    width: auto;
+    height: 100%;
+  }
+  .why-it-works-content-full .content-full-img img{
+    min-height: 460px;
+    width: auto;
+    height: 100%;
+  }
+  .why-it-works-content-full h5 {
+    max-width: 822px;
+    padding: 150px 0 68px;
+  }
   .slider-for {
     padding: 10px 20px;
   }
